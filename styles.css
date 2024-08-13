@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.container{
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  background: linear-gradient(135deg, #153677, #4d886f);
+}
+.todo-app {
+  width: 100%;
+  max-width: 500px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  background: #ffffff;
+  border-radius: 10px;
+}
+.todo-app h1{
+  color: #002765;
+  background-color: #f2fcfe;
+  display: flex; 
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 26px;
+  justify-content: center;
+  border-radius: 20px;
+}
+.todo-app h1 img{
+  width: 40px;
+  margin-left: 10px;
+}
+
+.row{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #e6e8ec;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 10px;
+}
+input {
+  flex: 1;
+  outline: none;
+  font-size: 15px;
+  padding:7px;
+  font-weight: 16px;
+  background: transparent;
+  border: none;
+  /* margin-bottom: 3px; */
+}
+button{
+  color:#fff;
+  background: radial-gradient(circle, rgb(159, 98, 202) 0%, rgb(99, 169, 218) 100%);
+  font-size: 16px;
+  border: none;
+  outline: none;
+  padding: 12px 36px;
+  cursor: pointer;
+  border-radius: 35px;
+}
+
+p{
+  padding: 12px;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  margin-bottom: 15px;
+  /* text-align: end; */
+  
+}
+
+ul li{
+  list-style: none;
+  font-size: 17px;
+  padding: 11px 8px 11px 50px;
+  user-select: none;
+  cursor: pointer;
+  position: relative;
+}
+ul li::before{
+  content: ' ';
+  position: absolute;
+  height: 28px;
+  width: 28px;
+  border-radius: 50%;
+  background-image: url(/images/unchecked.png);
+  background-size: cover;
+  background-position: center;
+  top: 12px;
+  left:8px;
+}
+ul li.checked{
+  color: #626060;
+  text-decoration: line-through;
+}
+ul li.checked::before{
+  background-image: url(/images/checked8.png);
+  background-color: #96d6d4;
+}
+ul li span{
+  position: absolute;
+  right: 0;
+  top: 11px;
+  width: 30px;
+  height: 30px;
+  font-size: 22px;
+  line-height: 34px;
+  text-align: center;
+  color: #575555;
+}
+ul li span:hover{
+  background: #e6e8ec;
+  border-radius: 50%;
+}
