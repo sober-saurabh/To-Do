@@ -55,7 +55,7 @@ input {
 }
 button{
   color:#fff;
-  background: radial-gradient(circle, rgb(159, 98, 202) 0%, rgb(99, 169, 218) 100%);
+  background-color: #467ca2;
   font-size: 16px;
   border: none;
   outline: none;
